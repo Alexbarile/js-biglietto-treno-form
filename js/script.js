@@ -1,32 +1,45 @@
-// 1 - chiedere il numero dei km
+// inserimento dati
 
-let km = parseInt(prompt ('numero dei km'));
+let genera = document.getElementById('genera');
+genera.addEventListener('click', function(){
+    nome = document.getElementById('nome').value;
+    km = document.getElementById('km').value;
+    eta = document.getElementById('eta').value;
+    price = km * 0.21;
+    if(eta < 18){
+        // prezzo (price) - il 20%
+        price = price - ((price/100) * 20);
 
+        console.log(price)
+    }else if(eta > 65){
+        // prezzo (price) - il 40%
+        price = price - ((price/100) * 40);
+        console.log(price)
+    }
+    else{
+    }
 
-// 2 - chiedere l’età
+    price = price.toFixed(2);
 
-let eta = parseInt(prompt ('numero età'));
+    document.getElementById('prezzo').innerHTML = price + '€';
+    document.getElementById('nome-passeggero').innerHTML = nome;
+    document.getElementById('offerta').innerHTML = 'Biglietto Standard';
+    document.getElementById('carrozza').innerHTML = '5';
+    document.getElementById('codice').innerHTML = '92911';
+});
 
-// 3 - calcolo il prezzo
+// pulizia form
 
-let price = km * 0.21;
+let annulla = document.getElementById('annulla');
+annulla.addEventListener('click', function(){
 
-// SE / ELSE 
+    nome = document.getElementById('nome').value = '';
+    km = document.getElementById('km').value = '';
+    eta = document.getElementById('eta').value = '';
 
-if(eta < 18){
-    // prezzo (price) - il 20%
-    price = price - ((price/100) * 20);
-    
-}else if(eta > 65){
-    // prezzo (price) - il 40%
-    price = price - ((price/100) * 40);
-
-}
-
-else{
-
-}
-
-// 4 - Mostro il prezzo in un formato leggibile (massimo due punti decimali)
-
-document.getElementById('prezzo').innerHTML = price.toFixed(2);
+    document.getElementById('prezzo').innerHTML = '';
+    document.getElementById('nome-passeggero').innerHTML = '';
+    document.getElementById('offerta').innerHTML = '';
+    document.getElementById('carrozza').innerHTML = '';
+    document.getElementById('codice').innerHTML = '';
+});
