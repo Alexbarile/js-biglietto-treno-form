@@ -11,3 +11,4 @@ PROBLEMA: calcolo del prezzo del biglietto del treno
     non applico nessuno sconto
 4 - Mostro il prezzo in un formato leggibile
     4.1 massimo due punti decimali
+5 - Stilizziamo e creiamo un biglietto vero con degli input    

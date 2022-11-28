@@ -29,4 +29,4 @@ else{
 
 // 4 - Mostro il prezzo in un formato leggibile (massimo due punti decimali)
 
-document.getElementById('prezzo').innerHTML = 'il tuo prezzo è' + " " + price.toFixed(2);
+document.getElementById('prezzo').innerHTML = price.toFixed(2);

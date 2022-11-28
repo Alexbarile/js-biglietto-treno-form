@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.card{
+    margin-top: 50px;
+}
+
+/* calcola prezzo biglietto */
+
+.col h3{
+    font-size: 20px;
+}
+
+#nome{
+    width: 101%;
+}
+
+input:placeholder-shown{
+    text-align: center;
+}
+
+select{
+    padding: 7px;
+}
+
+/* biglietto */
+
+
+.container-main h3{
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.info{
+    background-color: grey;
+}
+
